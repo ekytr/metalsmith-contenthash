@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-contenthash",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Metalsmith add a hash to the filename",
   "main": "./lib/",
   "repository": {
