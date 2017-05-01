@@ -1,0 +1,19 @@
+{
+  "name": "metalsmith-contenthash",
+  "version": "0.0.1",
+  "description": "Metalsmith add a hash to the filename",
+  "main": "./lib/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElijahKaytor/metalsmith-contenthash.git"
+  },
+  "author": "Elijah Kaytor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ElijahKaytor/metalsmith-contenthash/issues"
+  },
+  "homepage": "https://github.com/ElijahKaytor/metalsmith-contenthash#readme",
+  "dependencies": {
+    "multimatch": "^2.1.0"
+  }
+}
