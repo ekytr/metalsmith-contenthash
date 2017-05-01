@@ -71,3 +71,13 @@ ms.build(function(error) {
 });
 
 ```
+
+
+
+The new filenames are accessible via the ``hashes`` metadata object.
+
+```html
+<link href="{{ hashes.[assets/css/main.js] }}" rel="stylesheet" type="text/css" />
+<script src="{{ hashes.[assets/js/main.js] }}"></script>
+<img src="{{ hashes.[assets/img/headers/IMG_2083.jpg] }}">
+```
