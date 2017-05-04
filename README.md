@@ -41,9 +41,8 @@ ms.use(contenthash({
     algorithm: 'sha256',
     
     // match static files
-    // only applies to basename
     // uses multimatch  https://www.npmjs.com/package/multimatch
-    pattern: ['*.{js,scss,css,map,png,jpg}'],
+    pattern: ['**/*.{js,scss,css,map,png,jpg}'],
     
     // function for determining new filename
     // default function uses only first 16 hexadecimal digits
