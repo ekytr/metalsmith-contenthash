@@ -16,14 +16,17 @@ function plugin(options) {
     options.pattern = options.pattern || ['**/*.{js,scss,css,map,png,jpg}'];
     options.rename = options.rename || function(filepath, digest) {
         
+        var basename = path.basename(filepath);
+        var dirname = path.dirname(filepath);
+        
         // we split at the first period, instead of extname
         //  this is to handle .css.map
-        var ext = filepath.indexOf('.');
+        var ext = basename.indexOf('.');
         
-        return [
-            filepath.substring(0, ext),
+        return dirname + [
+            basename.substring(0, ext),
             '.', digest.substr(0, 16),
-            filepath.substring(ext),
+            basename.substring(ext),
         ].join('');
         
     };
