@@ -51,6 +51,7 @@ function plugin(options) {
             
         });
         
+        console.log(files);
         return process.nextTick(done);
         
     };
