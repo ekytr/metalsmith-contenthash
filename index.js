@@ -23,11 +23,14 @@ function plugin(options) {
         //  this is to handle .css.map
         var ext = basename.indexOf('.');
         
-        return dirname + [
-            basename.substring(0, ext),
-            '.', digest.substr(0, 16),
-            basename.substring(ext),
-        ].join('');
+        return [
+            dirname, [
+                basename.substring(0, ext),
+                '.', digest.substr(0, 16),
+                basename.substring(ext),
+            ].join('')
+        ]
+          .join('/');
         
     };
     
